@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Rentsphere - find yuor next home with ease</title>
+<meta name="description" content="rentsphere connects apartment owners with renters.find your next home with ease."/>
+<style>
+    :root{--bg:#fffaf3;--card:#fff5e6>--accent:f97316>--muted:6b7280;--glass:rgba(0,0,0,0.04);
+    --radius:14px:--maxw:1100px;
+    color-scheme: light;}
+    *{box-sizing:border-box}
+    html,body{height:1oo;margin:o;font-family:inter,ui-san-serif,system-ui,-apple-system,"Segoe UI",Roboto, "Helvetica Neue", Arial; bacckground:var(--bg); color:#1f2937;-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content: space-between;gap: 20px;position: relative;}
+    .brand{display:flex;align-items: center;gap: 12px;}
+    .logo{width:44px;height:44px;border-radius: 10px;background:white;display:flex;align-items: center;justify-content: center;font-weight: 700;
+    color: var(--accent);font-size: 14px;border: 2px solid green;} 
+    nav a{color: var(--muted);text-decoration: none;font-weight: 600;}
+    nav a:hover{color: var(--accent);}
+
+    /*Mobile nav*/
+    .menu-toggle{display: none;cursor: pointer;background: none;border: none;font-size:24px ;color: var(--accent);}
+    .mobile-nav{display:none;flex-direction:column;gap:28px;position:absolute;top:70px;right:0;background:var(--card);padding:16px;border-radius: 12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .mobile-nav a{margin:0}
+    
+    .hero{display:grid;grid-template-columns:1fr 420 px;gap :20px;align-items: center;padding: 0cap48px o;}
+    .hero h1{font-size: 40px;margin: 0 0 12px;color:#111827}
+    .herro p{margin:0 0 20px;color:var(--muted);line-height: 1.6}
+    .cta {display:inline-block;padding:12px 18px;border-radius:12px;background: linear-gradient(90deg,var(--accent),fbbf24);color:white;font-weight: 700;text-decoration:none}
+    .cards{display: grid;grid-template-columns: repeat(3,1fr);gap:16px;margin-top: 24px;}
+    .card{background: var(--card);padding: 18px;border-radius: 12px;background: linear-gradient(90deg,var(--accent),fbbf24);color: white;font-weight: 700;text-decoration: none;}
+    .card h3{margin: 0 0 8px;color: 111827}
+    .mock-phone{background: var(--card);border-radius: 18px;padding: 22px;border: 1px solid rgba(0,0,0,0.06)}
+    .features{background: grid;grid-template-columns: repeat(2,1fr);gap:18px;margin-top: 28px}
+    .feature{background: var(--glass);padding: 16px;border-radius: 12px}
+
+    footer{margin-top: 48px;padding:28px 0;border-top: 1px solid rgba(0,0,0,0.6);color:var(--muted)display-flex;justify-content:space-between;align-items:center}
+
+    @media (max-width:980px){
+        .hero {grid-template-columns: 1fr}
+        .cards{grid-templet-colums:repeat(21fr)}
+        .features{grid-template-columns:1fr }
+    }
+    @media (max-width:640px){
+        nav {display:none}
+        .menu-toggle{display:block}
+        .cards{grid-template-columns: 1fr}
+        header{flex-direction: row}
+        .hero h1{font-size: 28px}
+    } 
+       
+    .form-row{display:flex;gap:10px}
+    input,textarea{width:100%;padding: 10px;border-radius: 10px;border: 1px solid rgba(0,0,0,0.01);background: transparent;color: inherit}
+    button[type="submit"]{padding:10px 14px;border-radius: 10px;border: 0;background:var(--accent);color:white;font-weight: 700}
+    .muted{color:var(--muted);font-size: 13px}
+   </style> 
+  </head> 
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">warm orange + beige color scheeme with a simple house surrounded by a simple icon and the word rentsphere below it</div>
+          <div>
+            <div style="font-weight:700;font-size:18px;color:var(--accent)">Rentsphere</div>
+            <div class="muted" style="font-size:12px">Find your next home with ease</div>
+          </div>
+        </div>
+        <nav arial-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">=</button>
+        <div class="mobile-nav" id="mobileNav">
+          <a href="#features">Featutures</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact"></a>
+        </div>
+      </header>
+      
+      <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div>
+                <h1 id="hero-heading"></h1>Find your next home with ease.</h1>
+                <p>Rentsphere makes it simple to connect apartment owners with renters.whether you're looking for your first home, an upgread, or managing property vacancies, we streamline the process so you can focus on what matters most-living</p>
+                <a class="cta" href ="#contact">Get started today</a>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h3> Verified listings</h3>
+                        <p      <div class="card"></div>class=""muted >Browse apartments from trusted owners with peace of mind</p>
+                    </div>
+               
+                    <h3>Direct connections</h3>
+                    <p class="muted">Skip the middle men and connect directly with apartment owners.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Smart Search</h3>
+                        <p class="muted">Filter by price, location, and amenities to the perfect match.</p>
+                    </div>
+                </div>
+            </div>
+            <section id="features" class="features"
+              <div class="feature">
+                <h4>24/7 Support</h4>
+                <p class="muted">Our team is always ready to guide you through the rental process.</p>
+              </div>
+              <div class="feature">
+                <h4>Customizable Experience</h4>
+                <p class="muted">Save searches, favorite listings, and get personalized alerts.</p>
+              </div>
+        </section>
+    </div>
+    
+    <aside class="mock-phone" aria-label="Preview">
+        <img src="data:image/svg+xml;utf8,<svg xlmns='http://www.w3.org/2000/svg' width='320' height='100%' fill='%23fef3c7' /></svg>" alt="Demo preview" style="width:100%;border-radius: 12px;display:block"/>
+        <div style="margin-top: 12px;color:var(--muted);font-size: 13px;">Preview:Home . Pricing . Contact</div>
+    </aside>
+</section>
+
+<section id="Pricing" style="margin-top: 28px">
+    <h2>Pricing</h2>
+    <div style="display:grid;grid-template-columns: repeat(3,1fr);gap:14px;margin-top: 12px">
+        <div class="card"><h3>Free</h3><p class="muted">Explore listings, create a profile, and save favorites.</p></div>
+        <div class="card"><h3>Premium</h3><p class="muted">Get early access to new listings, advanced search tools, and priority support.</p></div>
+        <div class="card"><h3>Business</h3><p class="muted">For property owners & agencies with multiple listings and branding tools.</p></div>    
+    </div> 
+</section>
+
+<section id="contact" style="margin-top: 28px">
+    <h2>Contact</h2>
+    <p class="muted">Have questions, need support, or want to list your property? We are here to help.</p>
+    <form id="contactForm" onsubmit="handleForm(event)" style="margin-top: 12px;max-width: 720px">
+        <div class="form-row">
+            <input id="name" type="text" placeholder="Your name" reqired />
+            <input id="email" type="email" placeholder="Email" required />
+        </div>
+        <div style="margin-top: 10px">
+            <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+        <div style="margin-top: 10px;display:flex;gap:10px;align-items:center">
+            <button type="submit">Send message</button>
+            <div class="muted">Or email : support@rentsphere.com . Phone : +254 114829717</div>
+        </div>
+        <div id="formStatus" class="muted" style="margin-top:8px" aria-live="polite"></div>
+    </form>
+</section>
+      </main>
+
+      <footer>
+        <div>c <span id="year"></span>Rentsphere</div>
+        <div class="muted">Connecting renters with trusted apartment owners.</div>
+      </footer>
+    </div>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function handleForm(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const status = document.getElementById('status').value.trim();
+            if(!name||!email||!message){ status.textContent = 'please fill all fields.'; return }
+            status.textContent = 'Thanks - your message has been received (demo).';
+            e.target.reset(); 
+        }
+
+        const menuToggle=document.querySelector('.menu-toggle');
+        const mobileNav=document.getElementById('mobileNav');
+        menuToggle.addEventListener('click',()=>{
+            mobileNav.style.display = mobileNav.style.display=='flex' ? 'none' : 'flex';
+        });  
+    </script>
+</body>
+</html>    
+
+    
+        
+
+        
+        </a>
+        
+        
+        
+        
+        
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        , green, blue, alpha);}
+</style> </head>
