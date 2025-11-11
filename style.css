@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.booked {
+  opacity: 0.6;
+  background: #eee;
+}
+.form-container {
+  max-width: 400px;
+  margin: 2em auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}}
+

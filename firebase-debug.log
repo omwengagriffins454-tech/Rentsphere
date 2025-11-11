@@ -1,0 +1,53 @@
+[debug] [2025-11-11T15:40:07.562Z] ----------------------------------------------------------------------
+[debug] [2025-11-11T15:40:07.565Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-11-11T15:40:07.566Z] CLI Version:   14.24.2
+[debug] [2025-11-11T15:40:07.566Z] Platform:      win32
+[debug] [2025-11-11T15:40:07.566Z] Node Version:  v22.20.0
+[debug] [2025-11-11T15:40:07.566Z] Time:          Tue Nov 11 2025 18:40:07 GMT+0300 (East Africa Time)
+[debug] [2025-11-11T15:40:07.566Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ADMIN\.vscode\Rentsphere
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-11T15:40:28.144Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-11T15:40:28.145Z] > authorizing via signed-in user (omwengagriffins454@gmail.com)
+[debug] [2025-11-11T15:40:28.149Z] Checked if tokens are valid: true, expires at: 1762878774182
+[debug] [2025-11-11T15:40:28.149Z] Checked if tokens are valid: true, expires at: 1762878774182
+[debug] [2025-11-11T15:40:28.161Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb [none]
+[debug] [2025-11-11T15:40:28.244Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2025-11-11T15:40:28.245Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb (original: request to https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[debug] [2025-11-11T15:40:28.261Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/rentsphere-79dfb
+    at RetryOperation._fn (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:271:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project rentsphere-79dfb. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-11-11T15:42:06.227Z] ----------------------------------------------------------------------
+[debug] [2025-11-11T15:42:06.236Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2025-11-11T15:42:06.237Z] CLI Version:   14.24.2
+[debug] [2025-11-11T15:42:06.238Z] Platform:      win32
+[debug] [2025-11-11T15:42:06.240Z] Node Version:  v22.20.0
+[debug] [2025-11-11T15:42:06.241Z] Time:          Tue Nov 11 2025 18:42:06 GMT+0300 (East Africa Time)
+[debug] [2025-11-11T15:42:06.241Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-11T15:42:06.260Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-11T15:42:06.261Z] > authorizing via signed-in user (omwengagriffins454@gmail.com)
+[debug] [2025-11-11T15:42:11.355Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+[error] 
+[error] Error: An unexpected error has occurred.

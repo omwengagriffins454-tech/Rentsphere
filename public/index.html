@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentsphere | Find & Book Apartments</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+  </head>
+  <body>
+    <header>
+      <h1>🏠 Rentsphere</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Pricing</a>
+        <a href="#">Login</a>
+        <a href="#">Contact</a>
+        <a href="#">Dashboard</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+      <h2>Find your next home or post your property easily</h2>
+      <p>Apartment owners pay Ksh 1000 to post listings.  
+      Tenants pay Ksh 50 to book one.</p>
+      <a href="login.html" class="btn">Get Started</a>
+      
+      <section class="listing">
+        <h2>2-Bedroom Apartment in Nairobi</h2>
+        <p>Ksh 15,000 / month</p>
+        <p>Location: Westlands</p>
+
+        <div class="payment-section">
+          <h3>Book Now</h3>
+          <p>Pay Ksh 50 booking fee to reserve</p>
+
+          <!-- PayPal button -->
+          <div id="paypal-button-container"></div>
+
+          <!-- M-Pesa button -->
+          <button id="mpesa-btn" class="mpesa-button">
+            📱 Pay with M-Pesa
+          </button>
+
+          <p id="booking-status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Rentsphere. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

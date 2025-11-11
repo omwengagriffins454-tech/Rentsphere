@@ -1,0 +1,52 @@
+.signup-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-container h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.signup-container button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.login-link a {
+  color: #007bff;
+}
